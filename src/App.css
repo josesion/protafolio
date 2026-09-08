@@ -1,0 +1,50 @@
+.portfolio-shell {
+  position: relative;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 30px 0 64px;
+}
+
+.portfolio-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0 auto auto 50%;
+  width: 38rem;
+  height: 38rem;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.16), transparent 58%);
+  transform: translateX(-50%) translateY(calc(var(--scroll-progress, 0) * -18px));
+  pointer-events: none;
+  filter: blur(32px);
+  opacity: 0.7;
+}
+
+main {
+  display: block;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  filter: blur(8px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.8s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+

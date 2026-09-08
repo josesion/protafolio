@@ -1,0 +1,31 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.about-copy {
+  color: #d4d4d8;
+  line-height: 1.8;
+  font-size: 1rem;
+  display: grid;
+  gap: 18px;
+}
+
+.skills-box {
+  background: rgba(17, 19, 23, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
