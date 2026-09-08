@@ -18,8 +18,8 @@ export function Hero() {
       <div className="hero-copy reveal" data-reveal>
         <p className="eyebrow">Fullstack Developer</p>
         <h1>
-          Desarrollo soluciones digitales para <span>gestionar academias</span>{" "}
-          con claridad y eficiencia.
+          Desarrollo soluciones digitales para <span>negocios, instituciones y</span>{" "}
+          academias con claridad y eficiencia.
         </h1>
         <p className="lead">
           Soy <strong>José Manuel López</strong>, Fullstack Developer y analista
